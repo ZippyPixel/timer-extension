@@ -1,0 +1,94 @@
+/* Import a dot-matrix style font */
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+body {
+  width: 300px;
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "VT323", monospace; /* Dot-matrix feel */
+  border: 1px solid #333; /* Subtle border for the popup */
+}
+
+h2 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+#display {
+  font-size: 48px;
+  margin: 10px 0 20px 0;
+  letter-spacing: -2px;
+}
+
+button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 8px 20px;
+  border-radius: 20px; /* Pill shape */
+  font-family: "VT323", monospace;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: lowercase;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+button:active {
+  background-color: #ff0000; /* Nothing's signature red accent */
+  border-color: #ff0000;
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.controls label {
+  font-size: 12px;
+  color: #bbb;
+  margin-bottom: 6px;
+}
+
+input[type="range"] {
+  width: 160px;
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  background: #333;
+  border-radius: 6px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  margin-top: -5px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
